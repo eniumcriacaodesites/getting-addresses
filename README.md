@@ -1,27 +1,29 @@
+# Detalhes
+Este pacote deverá fornecer um ponto de partida para se trabalhar com endereços, que deve receber dados através de um relacionamento [polimórfico](https://laravel.com/docs/9.x/eloquent-relationships#polymorphic-relationships), possibilitando a intergração do pacote com as models do seu sistema,  
 # Cadastrado dinâmico de endereço com localização no mapa
-
+Em Andamento
 # Localização de endereços com API do Google Maps
-
+Em Andamento
 # Estados e Cidades do Brasil a partir da API do IBGE
 
-Pacote Laravel que cria e atualiza todos os estados e cidades do Brasil a partir de uma integração com a API do IBGE
+Esta ação cria e atualiza todos os estados e cidades do Brasil a partir de uma integração com a API do IBGE
 
 ## Instalação
 ```
-composer require carlos/gettingaddresses
+composer require eniumcriacaosites/getting-addresses
 ```
 Assim que terminar você precisar registrar o ServiceProvider no seu arquivo `app.php`
 ```
 // config/app.php
 
 'providers' => [
-    Carlos\GettingAddresses\Providers\GettingAddressServiceProvider::class,
+    EniumCriacaoSites\GettingAddresses\Providers\GettingAddressServiceProvider::class,
 ];
 ```
 
 Agora execute o comando abaixo para publicar as configurações necessárias
 ```
-php artisan vendor:publish --provider="Carlos\GettingAddresses\Providers\StatesAndCitiesIbgeServiceProvider"
+php artisan vendor:publish --provider="EniumCriacaoSites\GettingAddresses\Providers\GettingAddressServiceProvider"
 ```
 
 Execute o comando abaixo para criar as tabelas no banco de dados
@@ -41,5 +43,8 @@ Para importar todos os estados e cidades da API do IBGE basta executar o comando
 php artisan ibge:import-states-cities
 ```
 
-Obs.: Nenhum dado será duplicado caso o comando seja executado mais de uma vez, na verdade ele irá atualizar todos os registros. <br />
-Então sinta-se a vontade para criar um `CRON` onde será executado em um determinado intervalo de tempo para atualizar seu banco de dados.
+## Observações
+
+- Sempre que rodar o  *php artisan ibge:import-states-cities* a aplicação criar ou atualiza os dados
+- Se deseja que a aplicação atualize a base de dados periodicamente, crie uma tarefa *CRON* em seu servidor para excutar o comando. 
+
