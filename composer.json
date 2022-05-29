@@ -1,0 +1,15 @@
+{
+    "name": "carlos/getting-addresses",
+    "description": "Get address data through googlemaps and ibge",
+    "license": "Mit",
+    "autoload": {
+        "psr-4": {
+            "Carlos\\GettingAddresses\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "Carlos da Silva",
+        "email": "carlos@enium.com.br"
+    }],
+    "require": {}
+}
