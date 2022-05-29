@@ -1,10 +1,10 @@
 <?php
 
-namespace Carlos\GettingAddresses\Providers;
+namespace EniumCriacaoSites\GettingAddresses\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Carlos\GettingAddresses\Commands\ImportStatesAndCitiesCommand;
-use Carlos\GettingAddresses\Services\Integration\IbgeRestIntegrationService;
+use EniumCriacaoSites\GettingAddresses\Commands\ImportStatesAndCitiesCommand;
+use EniumCriacaoSites\GettingAddresses\Services\Integration\IbgeRestIntegrationService;
 
 class GettingAddressServiceProvider extends ServiceProvider
 {

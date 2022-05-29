@@ -1,12 +1,12 @@
 <?php
 
-namespace Carlos\GettingAddresses\Commands;
+namespace EniumCriacaoSites\GettingAddresses\Commands;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Console\Command;
-use Carlos\GettingAddresses\Models\City;
-use Carlos\GettingAddresses\Models\State;
-use Carlos\GettingAddresses\Services\Integration\IbgeRestIntegrationService;
+use EniumCriacaoSites\GettingAddresses\Models\City;
+use EniumCriacaoSites\GettingAddresses\Models\State;
+use EniumCriacaoSites\GettingAddresses\Services\Integration\IbgeRestIntegrationService;
 use Symfony\Component\HttpKernel\Exception\ServiceUnavailableHttpException;
 
 class ImportStatesAndCitiesCommand extends Command

@@ -1,6 +1,6 @@
 <?php
 
-namespace Carlos\GettingAddresses\Models;
+namespace EniumCriacaoSites\GettingAddresses\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Carlos\GettingAddresses\Services\Integration;
+namespace EniumCriacaoSites\GettingAddresses\Services\Integration;
 
 use Exception;
 use GuzzleHttp\Client;

@@ -1,10 +1,10 @@
 {
-    "name": "carlos/getting-addresses",
+    "name": "eniumcriacaosites/getting-addresses",
     "description": "Get address data through googlemaps and ibge",
     "license": "Mit",
     "autoload": {
         "psr-4": {
-            "Carlos\\GettingAddresses\\": "src/"
+            "EniumCriacaoSites\\GettingAddresses\\": "src/"
         }
     },
     "authors": [{
