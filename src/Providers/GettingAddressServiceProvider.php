@@ -12,7 +12,7 @@ class GettingAddressServiceProvider extends ServiceProvider
     {
         $this->publishConfig();
         $this->registerCommands();
-        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+        $this->loadRoutesFrom(__DIR__ . '/../routes/api.php');
     }
 
     public function register()
